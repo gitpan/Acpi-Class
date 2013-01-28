@@ -1,7 +1,4 @@
 package Acpi::Class;
-{
-  $Acpi::Class::VERSION = '0.002';
-}
 # ABSTRACT: Inspired in Acpi::Battery, this module gets the contents of the directory '/sys/class' in terms of 'classes' (ArrayRef of directories in /sys/class), 'devices' (ArrayRef of subdirectory in class) and 'attributes' (HashRef attributes => values, from the contents of devices directory).
 
 # Modules {{{
@@ -193,7 +190,7 @@ Get involved:
 
 =head1 SEE ALSO
 
-The modules L<Acpi::Battery>, L<Acpi::Fan> and L<Acpi::Temperature> get the information from the directory F</proc/acpi>. This directory is deprecated in Linux kernel 2.6.24 and deleted in 2.6.39.
+L<Acpi::Battery>: gets the information from the directory F</proc/acpi>
 
 =cut
 
