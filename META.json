@@ -27,11 +27,10 @@
       "runtime" : {
          "requires" : {
             "Carp" : "0",
-            "Data::Dumper" : "0",
             "List::Compare" : "0",
             "Object::Tiny::RW" : "0",
             "Object::Tiny::XS" : "0",
-            "perl" : "5.010",
+            "perl" : "5.012",
             "strict" : "0",
             "warnings" : "0"
          }
@@ -53,7 +52,7 @@
          "web" : "https://github.com/mimosinnet/Acpi-Class"
       }
    },
-   "version" : "0.002",
+   "version" : "0.003",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.016000"
@@ -144,6 +143,11 @@
             },
             "name" : "Prereqs",
             "version" : "4.300029"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::MinimumPerl",
+            "name" : "MinimumPerl",
+            "version" : "1.003"
          },
          {
             "class" : "Dist::Zilla::Plugin::PkgVersion",

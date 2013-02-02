@@ -1,11 +1,10 @@
 package Acpi::Class::Devices;
 {
-  $Acpi::Class::Devices::VERSION = '0.002';
+  $Acpi::Class::Devices::VERSION = '0.003';
 } 
 #ABSTRACT: Gives an ArrayRef with the directores in a folder.
 
 # use modules {{{
-use 5.010;
 use strict;
 use warnings;
 use Object::Tiny::XS qw{ dir pattern };

@@ -2,7 +2,7 @@
 use strict;
 use warnings;
 
-use 5.010;
+use 5.012;
 
 use ExtUtils::MakeMaker 6.30;
 
@@ -26,14 +26,13 @@ my %WriteMakefileArgs = (
   "NAME" => "Acpi::Class",
   "PREREQ_PM" => {
     "Carp" => 0,
-    "Data::Dumper" => 0,
     "List::Compare" => 0,
     "Object::Tiny::RW" => 0,
     "Object::Tiny::XS" => 0,
     "strict" => 0,
     "warnings" => 0
   },
-  "VERSION" => "0.002",
+  "VERSION" => "0.003",
   "test" => {
     "TESTS" => "t/*.t t/Acpi/*.t t/Acpi/Class/*.t"
   }

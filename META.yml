@@ -18,16 +18,15 @@ meta-spec:
 name: Acpi-Class
 requires:
   Carp: 0
-  Data::Dumper: 0
   List::Compare: 0
   Object::Tiny::RW: 0
   Object::Tiny::XS: 0
-  perl: 5.010
+  perl: 5.012
   strict: 0
   warnings: 0
 resources:
   repository: git://github.com/mimosinnet/Acpi-Class.git
-version: 0.002
+version: 0.003
 x_Dist_Zilla:
   perl:
     version: 5.016000
@@ -100,6 +99,10 @@ x_Dist_Zilla:
           type: requires
       name: Prereqs
       version: 4.300029
+    -
+      class: Dist::Zilla::Plugin::MinimumPerl
+      name: MinimumPerl
+      version: 1.003
     -
       class: Dist::Zilla::Plugin::PkgVersion
       name: PkgVersion
